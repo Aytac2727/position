@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+
+header.logo {
+    float: left;
+}
+header .menu li {
+    display: inline-block;
+    padding: 0 15px;
+}
+header .menu {
+    float: right;
+}
+#services img {
+    vertical-align: middle;
+}
+#services .service-item {
+    width: 33.333%;
+    float: left;
+    position: relative;
+}
+
+#services .service-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(133, 87, 3);
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 135px;
+    transition:opacity .5s cubic-bezier(0, 0.18, 1, 0.54);
+}
+#services .service-item .service-content:hover {
+opacity: 0.8;
+} 
